@@ -4,6 +4,7 @@ Unofficial Python API for Allegro.pl.
 
 Usage:
 
+```
 >> import allegro
 >> allegro.search('spodnie mieskie')
 [
@@ -15,3 +16,4 @@ Usage:
     },
     . . .
 ]
+```
