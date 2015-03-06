@@ -33,7 +33,7 @@ def _parse_html(html):
         excerpt = item.find(attrs={'class': 'excerpt'})
         img_urls_raw = excerpt.find(attrs={'class': 'photo'})['data-img']
         img_urls = json.loads(img_urls_raw)
-        img_url = img_urls[0][-1:]
+        img_url = img_urls[0][-1:][0]
 
         details = item.find(attrs={'class': 'details'})
         var = {
